@@ -11,7 +11,9 @@ Without a proper consensus protocol run by the nodes the simulation shows that:
 
 You can adjust the propagation latency over the network changing the following parameters in the script:
 
-```class TransmissionTime: min,max = 1,2```
+```python
+class TransmissionTime: min,max = 1,2
+```
 
 After the simulation is run, the outcome is diplayed as a list of lines, one per node, each similar to the following:
 
@@ -25,6 +27,8 @@ In the first line, next to the node number, the total balance of all the wallets
 
 Finally, you can define a number of malicious nodes changing the following paramenter:
 
-```evilPeersNum = 1```
+```python
+evilPeersNum = 1
+```
 
 The malicious nodes are the the last ones.
