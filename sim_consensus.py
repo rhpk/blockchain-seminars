@@ -106,8 +106,3 @@ for p in peers:
     print("  %s > %d" % ("% 3d" % initialBalances[p.uid],p.received-p.spent))
     print("  %s" % " ".join((map(lambda q: "% 3d" % q.currentBalances[p.uid], peers))))
 
-# for t in peers[49].confirmedInTransactions:
-#     print("IN : From:% 3d - To:% 3d - % 3d - Confirmed by % 3d - %s" % (t.origin,t.recipient,t.amount,t.ack,t))
-#
-# for t in peers[49].confirmedOutTransactions:
-#     print("OUT: From:% 3d - To:% 3d - % 3d - Confirmed by % 3d - %s" % (t.origin,t.recipient,t.amount,t.ack,t))
